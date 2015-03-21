@@ -1,0 +1,33 @@
+
+.images_all {
+	position: absolute;
+	top: 110px;
+	width: 100%;
+	z-index: -3;
+	text-align: center;
+}
+
+.image_container {
+	position: relative;
+	width: 86%;
+	left: 50%;
+	margin-left: -43%;
+}
+
+.images {
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+
+.download {
+	-webkit-transition: opacity 0.5s linear;
+  	-moz-transition: opacity 0.5s linear;
+ 	-ms-transition: opacity 0.5s linear;
+ 	-o-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+	opacity: 0;
+}
+
+.download:hover {
+	opacity: 1;
+}

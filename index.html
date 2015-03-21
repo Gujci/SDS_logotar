@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>SDS Logotar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/subpage_style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+
+<body>
+<div class="menu_wrap">
+    <div class="Menuline"></div>
+    <div class="home_button">
+        <div class="logo">SDS
+            <a id="home_link" href="http://schdesign.hu"></a>
+
+            <div class="logo_2">Logótár</div>
+        </div>
+    </div>
+    <div class="menupontok" data-bind="foreach: titles">
+        <a class="menu" data-bind="attr:{href: '#' + $data.link, name: $data.link}">
+            <span data-bind="text: $data.title"></span>
+
+            <div class="selected_mark slide"></div>
+        </a>
+    </div>
+</div>
+
+<div class="images_all">
+    <div class="image_container" data-bind="foreach: images">
+        <div class="images">
+            <img data-bind="attr:{src: $data.preview}"/>
+            <a data-bind="attr:{href: $data.image}">
+                <img style="position: absolute; top: 10px; left: 10px" class="download" src="images/selected_logo.png"/>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<!-- Knockout -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'></script>
+<script src="app.js"></script>
+</body>
+</html>
