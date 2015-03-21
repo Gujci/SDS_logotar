@@ -162,12 +162,21 @@ a:hover, a:active, a:focus {
     position: relative; 
     left: 0;
     top: 0;
+    height: 160px;
+    width: 264px;
 }
 
-.image img {
+.images .image {
+    width: 264px;
+    height: 160px;
     position: relative; 
     top: 0; 
     left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid lightgray 2px;
+    box-sizing: border-box;
 }
 
 

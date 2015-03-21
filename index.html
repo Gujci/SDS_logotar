@@ -32,7 +32,7 @@
 <div class="images_all">
     <div class="image_container" data-bind="foreach: images">
         <div class="images">
-            <img data-bind="attr:{src: $data.preview}"/>
+            <div data-bind="style: { backgroundImage: 'url(\'' + $data.preview + '\')' }" class="image"></div>
             <a data-bind="attr:{href: $data.image}">
                 <img style="position: absolute; top: 10px; left: 10px" class="download" src="images/selected_logo.png"/>
             </a>
