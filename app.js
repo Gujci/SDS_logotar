@@ -167,6 +167,10 @@ var imagesData = {
             {
                 preview: "images/preview/kfb.png",
                 image: "images/highres/kfb.ai"
+            },
+            {
+                preview: "images/preview/svk.png",
+                image: "images/highres/svk.ai"
             }
         ],
         title: "Egyéb",
@@ -182,7 +186,6 @@ var vm = {
     images: ko.observable(imagesData),
     titles: titlesArray
 };
-
 
 ko.applyBindings(vm);
 
